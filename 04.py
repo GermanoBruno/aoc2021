@@ -55,7 +55,6 @@ def winningBoard(l):
 
 def losingBoard(l):
 	numOrder, boards = getBoards(l)
-
 	for each in numOrder:
 		for board in boards:
 			if(board.markNum(each)):

@@ -23,6 +23,7 @@ def loadInput(day):
 			return content
 
 def getInput(day):
+	# Gets session cookies from private file
 	cookies_dict = {"session": auth.getCookies()}
 	url = "https://adventofcode.com/2021/day/" + str(day) + "/input"
 	req = requests.get(url, cookies=cookies_dict)
